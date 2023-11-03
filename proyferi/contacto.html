@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            vertical-align: baseline;
+        }
+
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: grey;
+            background-color: black;
+        }
+
+        .menu {
+            background-color: gray;
+            width: 200px;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+            font-size: 30px;
+            margin: 20px 0;
+            text-align: center;
+            width: 100%;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .menu a:hover {
+            background: black;
+            color: green;
+        }
+
+        .profile-picture {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid green;
+            margin: 20px 0;
+        }
+
+        .content {
+            background-color: black;
+            margin-left: 200px;
+            padding: 20px;
+        }
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 2px solid green;
+            margin: 20px 0;
+            overflow: hidden; 
+        }
+        .profile-picture img{
+            width: 120%;
+            height: 120%;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="profile-picture">
+            <img src="un-joven-vestido-con-camisa-blanca-de-cuadros-y-gafas-parado-los-brazos-cruzados-sonriendo-aislado-en-fondo-blanco-259739615.webp" alt="Imagen del creador" width="100px"height="100px">
+        </div>
+        <a href="#contacto" onclick="mostrarSeccion('contacto')" style="color: white;">Contacto</a>
+        <a href="#direccion" onclick="mostrarSeccion('direccion')"style="color: white;">Dirección</a>
+        <a href="#preguntas" onclick="mostrarSeccion('preguntas')"style="color: white;">Preguntas</a>
+    </div>
+    
+    <div class="content">
+        <section id="contacto">
+            <h2 class="title" style="color: green;">Contacto</h2>
+            <p style="color: green;">¡Ponte en contacto con nosotros! Estamos aquí para ayudarte.</p>
+            <p style="color: green;">Creado por: Juan Perez y Ricardo Gutierrez</p>
+            <p style="color: green;">Correo Electrónico:naylex019@gmail.com</p>
+            <p style="color: green;">Teléfono: 7219968</p>
+        </section>
+        
+        <section id="direccion" style="display: none;">
+            <h2 class="title" style="color: green;">Dirección</h2>
+            <div id="map-container">
+                <a href="https://www.google.com/maps/d/u/0/viewer?mid=1_2ytcZkyLDXF-w3aq9A8PaPm9fM&hl=es_419&ll=-33.413527504443145%2C-70.64397649999998&z=18">Ver en Google Maps</a>
+                <img src="como-activar-modo-oscuro-permanente-google-maps.webp" alt="">
+            </div>
+        </section>
+
+        <section id="preguntas" style="display: none;">
+            <h2 class="title" style="color: green;">Preguntas</h2>
+            <p style="color: green;">Si tienes alguna pregunta, no dudes en hacérnosla. Completa el formulario a continuación y te responderemos lo antes posible.</p>
+            <form action="procesar_pregunta.php" method="post">
+                <div class="form-group">
+                    <label for="nombre" style="color: green;">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="correo" style="color: green;">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="pregunta" style="color: green;">Tu Pregunta:</label>
+                    <textarea id="pregunta" name="pregunta" rows="4" required></textarea>
+                </div>
+        
+                <input type="submit" value="Enviar Pregunta">
+            </form>
+        </section>
+        
+    </div>
+
+    <script>
+        function mostrarSeccion(seccionId) {
+
+            var secciones = document.querySelectorAll('.content section');
+            for (var i = 0; i < secciones.length; i++) {
+                secciones[i].style.display = 'none';
+            }
+
+            var seccion = document.getElementById(seccionId);
+            seccion.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
+
+
+

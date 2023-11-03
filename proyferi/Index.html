@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" type="text/css" href="tu-archivo-de-estilos.css"> 
+    <title>Index</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            vertical-align: baseline;
+        }
+        body{
+            text-align: center;
+            font-family: sans-serif;
+        }
+       
+        .head{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 63px;
+            background: black; 
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+        }
+        .navbar{
+            display: flex;
+            margin-right: 10px;
+        }
+        .logo{
+            margin-left: 30px;
+            background: black;
+        }
+        .logo a{
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+            font-size: 20px;
+        }
+        .logo img {
+   		max-width: 60px; 
+    	height: auto; 
+}
+        .navbar a{
+            display: block;
+            padding: 23px 20px;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 20px; 
+        }
+        .navbar a:hover{
+            background: green;
+        }
+
+         .header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60vh !important;
+            background: url('abstract-black-green-shapes-wallpaper-preview.jpg') no-repeat center; 
+            background-size: cover;
+        }
+        .title{
+            margin-bottom: 40px;
+            font-size: 60px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: white;
+        }
+        p{
+            margin-bottom: 40px;
+            font-size: 18px;
+            color: white;
+            padding: 0 100px;
+        }
+        .btn{
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 40px;
+            border: 2px solid grey;
+            color: white;
+            text-decoration: none;
+            background: green;
+        }
+        .btn:hover{
+            background: none;
+        }
+        .btn-home{
+            display: flex;
+        }
+        .btn-home a{
+            margin: 0 10px;
+        }
+        .content{
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .sau{
+            padding: 30px;
+            background: #181818;
+        }
+        .box-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        .box-container .box{
+            height: 100px;
+            width: 150px;
+            background: grey;
+            text-align: center;
+            border-radius: 1rem;
+            box-shadow: 0 0.3rem 5rem grey; 
+            margin: 2rem;
+        }
+        .box-container .box i{
+            height: 3rem;
+            width: 3rem;
+            line-height: 3rem;
+            text-align: center;
+            border-radius: 50%;
+            color: white;
+            background: green;
+            font-size: 2rem;
+            margin: 1rem 0;
+        }
+        .box-container .box h3{
+            font-size: 20px;
+            color: green;
+        }
+        .box-container .box p{
+            padding: 0 15px;
+            font-size: 16px;
+        }
+        .about {
+            background: black;
+        }
+        .price{
+            background: url('abstract-black-green-shapes-wallpaper-preview.jpg') no-repeat center; 
+            background-attachment: fixed;
+            background-size: cover;
+            text-align: center;
+        }
+        .contact{
+            padding-top: 20px;
+            background: #181818;
+            padding-bottom: 0;
+        }
+        @media (max-width: 768px){
+            .title{
+                margin-bottom: 0;
+                font-size: 40px;
+            }
+            .sau{
+                height: 120vh;
+            }
+            .navbar{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+   <div class="head">
+        <div class="logo">
+        	<img src="_d6870c86-8932-40b1-81de-66738299c74e.jpg">
+        </div>
+        <nav class="navbar">
+            <a href="#">Inicio</a>
+            <a href="Historia.html">Historia</a>
+            <a href="eje.html">Tipos de Lenguaje</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </div>
+<header class="content header">
+        <h2 class="title">Inicio</h2>
+        <p>La función principal de esta página web es proporcionar una referencia interactiva de comandos básicos en tres lenguajes de programación (Python, Java y C++). Ofrece un menú lateral para seleccionar un lenguaje y una barra de búsqueda para encontrar comandos específicos. El contenido se actualiza dinámicamente según la selección del usuario, lo que facilita el acceso a la información. Además, se aplican estilos CSS para mejorar la presentación visual de la página.</p>
+        <div class="btn-home">
+        </div>
+    </header>
+    <section class="content sau">
+        <h2 class="title">Tipos De Lenguaje</h2>
+        <p>Puedes buscar comandos específicos de programación (Python, Java y C++) en esta página escribiendo palabras clave en la barra de búsqueda. Los resultados se muestran a medida que escribes y puedes filtrar por lenguaje. Al hacer clic en un comando, accedes a detalles y ejemplos sobre cómo usarlo en el lenguaje seleccionado.</p>
+ <div class="box-container">
+    <div class="box">
+        <a href="eje.html#commandListPython"> 
+            <img src="_252c6117-9556-4e78-b931-540b2454b24e.jpg" alt="Logo de Angular" height="100" width="150">
+        </a>
+        <h3>PHYTON</h3>
+    </div>
+    <div class="box">
+        <a href="eje.html#java"> 
+            <img src="_3783f428-291c-4007-97e4-c7e3ce4b12de.jpg" alt="Logo de Apple" height="100" width="150">
+        </a>
+        <h3>JAVA</h3>
+    </div>
+    <div class="box">
+        <a href="eje.html#commandListCPlusPlus"> 
+            <img src="_0704814e-3329-4665-bc58-914ed712a60a.jpg" alt="Logo de Android" height="100" width="150">
+        </a>
+        <h3>C++</h3>
+    </div>
+</div>
+        </div>
+    </section>
+  <section class="content about">
+        <h2 class="title">Historia</h2>
+<p>Los lenguajes de programación han evolucionado desde los complejos códigos binarios hasta lenguajes de alto nivel como Python, Java y C++. Cada uno tiene propósitos específicos: Python es conocido por su simplicidad, Java por su portabilidad y C++ por su rendimiento. La historia de los lenguajes de programación refleja la búsqueda constante de formas más efectivas de comunicarse con las computadoras, impulsando la revolución digital actual.</p>
+ <a href="Historia.html" class="btn" style="background: green;">Saber más</a> 
+    </section>
+    <section class="content price">
+        <article class="contain">
+            <h2 class="title">juego</h2>
+            <p>Recuerda que el juego está diseñado para desafiarte y entretenerte, así que disfruta del desafío de encontrar todas las parejas coincidentes antes de que se agote el tiempo. ¡Buena suerte!</p>
+            <a href="pagina1.html" class="btn" style="background: green;">Juguemos</a> 
+        </article>
+    </section>
+    <section class="content contact">
+        <h2 class="title">Contactos</h2>
+        <p>Naylex019@gmail.com</p>
+        <a href="contacto.html" class="btn" style="background: green;">Contactenos</a> 
+</body>
+</html>

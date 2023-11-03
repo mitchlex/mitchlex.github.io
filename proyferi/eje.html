@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" type="text/css" href="tu-archivo-de-estilos.css">
+    <style type="text/css">
+          * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            vertical-align: baseline;
+        }
+        
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: grey;
+        }
+        
+        .menu {
+            background: black;
+            height: 100vh;
+            width: 200px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .menu a {
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+            font-size: 30px;
+            margin: 20px 0;
+            text-align: center;
+            width: 100%;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        .menu a:hover {
+            background: #181818;
+            color: green;
+        }
+
+        .content {
+            background: #181818;
+            margin-left: 200px;
+        }
+
+        .content h1 {
+            color: green;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .content p {
+            color: grey;
+            font-size: 20px;
+            text-align: left;
+            margin: 20px;
+        }
+
+        .search-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .fondo {
+            display: flex;
+            justify-self: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            background: green;
+            border-radius: 8px;
+            padding: 10px 20px;
+            box-shadow: 0 0px 10px rgb(0, 0, 0, .3);
+            transition: .5s ease;
+            border: 2px solid black;
+        }
+        .fondo #searchInput {
+        color: black;
+        }
+        .fondo:hover {
+            width: 500px;
+        }
+
+        #searchInput {
+            width: 100%;
+            height: 100%;
+            color: green;
+            font-size: 20px;
+            border: none;
+            outline: none;
+            background: transparent;
+        }
+
+        i {
+            font-size: 22px;
+            color: blueviolet;
+            cursor: pointer;
+        }
+
+        #commandList {
+            list-style: none;
+            padding: 0;
+        }
+
+        #commandList li {
+            color: grey;
+            font-size: 100px;
+            text-align: left;
+            margin: 10px;
+        }
+
+        #comamandList b {
+            font-size: 100px;
+        }
+        
+        .content {
+            background: #181818;
+            margin-left: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .content h1 {
+            color: green;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .box-container {
+            background: black;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-left: 200px;
+        }
+
+        .box {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .box img {
+            display: block;
+            margin: 0 auto;
+            max-width: 150px;
+            height: auto;
+        }
+
+        .box h3 {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+   <div class="menu">
+        <a href="Index.html">Inicio</a>
+        <a href="#python">Python</a>
+        <a href="#java">Java</a>
+        <a href="#cplusplus">C++</a>
+        <img src="abstract-black-green-shapes-wallpaper-preview.jpg" alt="Imagen de fondo" style="max-width: 100%; height: 60%;">
+    </div>
+    </div>
+    <div class="box-container">
+        <div class="box">
+            <a href="#commandListPython">
+                <img src="_252c6117-9556-4e78-b931-540b2454b24e.jpg" alt="Logo de Python" height="100" width="150">
+            </a>
+            <h3>Python</h3>
+        </div>
+        <div class="box">
+            <a href="#commandListJava">
+                <img src="_3783f428-291c-4007-97e4-c7e3ce4b12de.jpg" alt="Logo de Java" height="100" width="150">
+            </a>
+            <h3>Java</h3>
+        </div>
+        <div class="box">
+            <a href="#commandListCPlusPlus">
+                <img src="_0704814e-3329-4665-bc58-914ed712a60a.jpg" alt="Logo de C++" height="100" width="150">
+            </a>
+            <h3>C++</h3>
+        </div>
+    </div>
+</section>
+    <div class="content">
+        <h1>Comandos Básicos</h1>
+        <div class="search-container">
+            <div class="fondo">
+                <input type="text" id="searchInput" placeholder="Buscar comandos...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <ul id="commandList">
+        </ul>
+        <ul id="commandListPython" style="display: none;">
+    <!-- Comandos de Python... -->
+    <li><b>print("Hola, mundo")</b> - Imprime "Hola, mundo" en la consola.</li>
+     <li><b>print("Hola, mundo")</b> - Imprime "Hola, mundo" en la consola en Python.</li>
+    <li><b>input("Ingresa un número: ")</b> - Recibe una entrada del usuario desde la consola en Python.</li>
+    <li><b>if condicion:</b> - Inicio de una declaración condicional en Python.</li>
+    <li><b>for elemento in lista:</b> - Bucle for para recorrer una lista en Python.</li>
+    <li><b>while condicion:</b> - Bucle while para repetir una acción mientras se cumpla una condición en Python.</li>
+    <li><b>def mi_funcion():</b> - Declaración de una función en Python.</li>
+    <li><b>return valor</b> - Devuelve un valor desde una función en Python.</li>
+    <li><b>lista = [1, 2, 3]</b> - Declaración de una lista en Python.</li>
+    <li><b>diccionario = {"clave": "valor"}</b> - Declaración de un diccionario en Python.</li>
+    <li><b>import modulo</b> - Importa un módulo en Python.</li>
+    <li><b>try:</b> - Inicio de un bloque try para manejar excepciones en Python.</li>
+    <li><b>except Exception as e:</b> - Captura y maneja una excepción en Python.</li>
+    <li><b>class MiClase:</b> - Declaración de una clase en Python.</li>
+    <li><b>mi_variable = 42</b> - Declaración de una variable en Python.</li>
+    <li><b>mi_cadena = "Hola"</b> - Declaración de una cadena (string) en Python.</li>
+    <li><b>mi_entero = 123</b> - Declaración de un entero en Python.</li>
+    <li><b>mi_flotante = 3.14</b> - Declaración de un número de punto flotante en Python.</li>
+    <li><b>mi_booleano = True</b> - Declaración de un valor booleano en Python.</li>
+    <li><b>mi_lista.append(elemento)</b> - Agrega un elemento a una lista en Python.</li>
+    <li><b>mi_lista.pop()</b> - Elimina y devuelve el último elemento de una lista en Python.</li>
+    <li><b>str_variable = "Texto"</b> - Declaración de una variable de tipo cadena en Python.</li>
+    <li><b>int_variable = 42</b> - Declaración de una variable de tipo entero en Python.</li>
+    <li><b>float_variable = 3.14</b> - Declaración de una variable de tipo punto flotante en Python.</li>
+    <li><b>boolean_variable = True</b> - Declaración de una variable de tipo booleano en Python.</li>
+    <li><b>for elemento in lista:</b> - Bucle for para recorrer una lista en Python.</li>
+    <li><b>while condicion:</b> - Bucle while para repetir una acción mientras se cumpla una condición en Python.</li>
+    <li><b>lista.append(elemento)</b> - Agrega un elemento a una lista en Python.</li>
+    <li><b>diccionario["clave"] = "valor"</b> - Asigna un valor a una clave en un diccionario en Python.</li>
+    <li><b>diccionario["clave"]</b> - Accede al valor asociado a una clave en un diccionario en Python.</li>
+    <li><b>import modulo</b> - Importa un módulo en Python.</li>
+    <!-- Más comandos de Python... -->
+</ul>
+
+<ul id="commandListJava" style="display: none;">
+    <!-- Comandos de Java... -->
+    <li><b>public class MiClase {</b> - Declaración de una clase en Java.</li>
+     <li><b>public class MiClase {</b> - Declaración de una clase en Java.</li>
+    <li><b>public static void main(String[] args) {</b> - Método principal de una aplicación Java.</li>
+    <li><b>int miVariable = 42;</b> - Declaración de una variable entera.</li>
+    <li><b>String miCadena = "Hola";</b> - Declaración de una cadena (string).</li>
+    <li><b>double miFlotante = 3.14;</b> - Declaración de un número de punto flotante.</li>
+    <li><b>boolean miBooleano = true;</b> - Declaración de un valor booleano.</li>
+    <li><b>if (condicion) {</b> - Inicio de una declaración condicional en Java.</li>
+    <li><b>for (int i = 0; i < 10; i++) {</b> - Bucle for en Java.</li>
+    <li><b>while (condicion) {</b> - Bucle while en Java.</li>
+    <li><b>System.out.println("Hola, mundo");</b> - Imprime "Hola, mundo" en la consola en Java.</li>
+    <li><b>int[] miArray = {1, 2, 3};</b> - Declaración de un arreglo en Java.</li>
+    <li><b>ArrayList<String> miLista = new ArrayList<>();</b> - Declaración de una lista en Java.</li>
+    <li><b>HashMap<String, String> miMapa = new HashMap<>();</b> - Declaración de un mapa en Java.</li>
+    <li><b>try {</b> - Inicio de un bloque try para manejar excepciones.</li>
+    <li><b>catch (Exception e) {</b> - Captura y maneja una excepción.</li>
+    <li><b>return valor;</b> - Devuelve un valor desde un método en Java.</li>
+    <li><b>miLista.add(elemento);</b> - Agrega un elemento a una lista en Java.</li>
+    <li><b>miLista.remove(0);</b> - Elimina un elemento de una lista en Java.</li>
+    <li><b>miMapa.put("clave", "valor");</b> - Agrega un par clave-valor a un mapa en Java.</li>
+    <li><b>miVariable = entrada.nextInt();</b> - Recibe una entrada desde el usuario en Java (requiere importar java.util.Scanner).</li>
+    <li><b>char miCaracter = 'A';</b> - Declaración de una variable de tipo caracter en Java.</li>
+    <li><b>long miEnteroLargo = 1234567890L;</b> - Declaración de una variable de tipo entero largo en Java.</li>
+    <li><b>float miFlotante = 3.14f;</b> - Declaración de una variable de tipo punto flotante en Java.</li>
+    <li><b>byte miByte = 100;</b> - Declaración de una variable de tipo byte en Java.</li>
+    <li><b>do { }</b> - Bucle do-while en Java.</li>
+    <li><b>switch (variable) { case valor: break; }</b> - Declaración switch para tomar decisiones en Java.</li>
+    <li><b>static void miMetodo() { }</b> - Declaración de un método estático en Java.</li>
+    <li><b>import paquete.clase;</b> - Importa una clase desde un paquete en Java.</li>
+    <li><b>instanceof</b> - Verifica si un objeto es una instancia de una clase en Java.</li>
+    <li><b>Math.random()</b> - Genera un número aleatorio en Java.</li>
+
+</ul>
+
+<ul id="commandListCPlusPlus" style="display: none;">
+    <!-- Comandos de C++... -->
+    <li><b>#include &lt;iostream&gt;</b> - Incluye la biblioteca iostream.</li>
+    <li><b>#include &lt;iostream&gt;</b> - Incluye la biblioteca iostream en C++.</li>
+    <li><b>using namespace std;</b> - Simplifica el uso de cout y cin en C++.</li>
+    <li><b>int main()</b> - Función principal del programa C++.</li>
+    <li><b>{ }</b> - Llaves para definir bloques de código en C++.</li>
+    <li><b>cout &lt;&lt; "Texto a mostrar";</b> - Imprime texto en la consola en C++.</li>
+    <li><b>cin >> variable;</b> - Recibe entrada desde el teclado en C++.</li>
+    <li><b>return 0;</b> - Indica que el programa se ejecutó correctamente en C++.</li>
+    <li><b>// Comentarios de una sola línea</b> - Documenta el código en C++.</li>
+    <li><b>/* Comentarios de varias líneas */</b> - Comentarios extensos en C++.</li>
+    <li><b>int miVariable = 42;</b> - Declaración de una variable entera en C++.</li>
+    <li><b>double miFlotante = 3.14;</b> - Declaración de un número de punto flotante en C++.</li>
+    <li><b>bool miBooleano = true;</b> - Declaración de un valor booleano en C++.</li>
+    <li><b>string miCadena = "Hola";</b> - Declaración de una cadena en C++ (requiere #include <string>).</li>
+    <li><b>vector<int> miVector;</b> - Declaración de un vector en C++ (requiere #include <vector>).</li>
+    <li><b>map<string, int> miMapa;</b> - Declaración de un mapa en C++ (requiere #include <map>).</li>
+    <li><b>for (int i = 0; i < 10; i++) {</b> - Bucle for en C++.</li>
+    <li><b>while (condicion) {</b> - Bucle while en C++.</li>
+    <li><b>if (condicion) {</b> - Inicio de una declaración condicional en C++.</li>
+    <li><b>void miFuncion() {</b> - Declaración de una función en C++.</li>
+    <li><b>miVector.push_back(elemento);</b> - Agrega un elemento a un vector en C++.</li>
+    <li><b>char miCaracter = 'A';</b> - Declaración de una variable de tipo caracter en C++.</li>
+    <li><b>long long miEnteroLargo = 123456789012345LL;</b> - Declaración de una variable de tipo entero largo en C++.</li>
+    <li><b>float miFlotante = 3.14f;</b> - Declaración de una variable de tipo punto flotante en C++.</li>
+    <li><b>bool miBool = false;</b> - Declaración de una variable de tipo booleano en C++.</li>
+    <li><b>for (auto& elemento : contenedor)</b> - Bucle for-each en C++.</li>
+    <li><b>do { } while (condicion);</b> - Bucle do-while en C++.</li>
+    <li><b>std::string miCadena = "Texto";</b> - Declaración de una cadena en C++ (requiere #include <string>).</li>
+    <li><b>std::vector<Tipo> miVector;</b> - Declaración de un vector en C++ (requiere #include <vector>).</li>
+    <li><b>std::map<Clave, Valor> miMapa;</b> - Declaración de un mapa en C++ (requiere #include <map>).</li>
+    <li><b>std::cout << "Texto a mostrar";</b> - Imprime texto en la consola en C++.</li>
+
+    <!-- Más comandos de C++... -->
+</ul>
+
+    </div>
+    
+   <script>
+    const searchInput = document.getElementById("searchInput");
+    function searchCommands(target) {
+        const commandList = document.getElementById(target);
+
+        const allCommands = document.querySelectorAll('ul');
+        allCommands.forEach((commands) => {
+            commands.style.display = 'none';
+        });
+a
+        commandList.style.display = 'block';
+
+        searchInput.addEventListener("keyup", () => {
+            const searchValue = searchInput.value.toLowerCase();
+            const commands = commandList.getElementsByTagName("li");
+
+            for (const command of commands) {
+                const text = command.textContent.toLowerCase();
+                if (text.includes(searchValue) || searchValue === "") {
+                    command.style.display = "block";
+                } else {
+                    command.style.display = "none";
+                }
+            }
+        });
+    }
+
+    const pythonLink = document.querySelector("a[href='#python']");
+    const javaLink = document.querySelector("a[href='#java']");
+    const cplusplusLink = document.querySelector("a[href='#cplusplus']");
+
+    pythonLink.addEventListener("click", () => {
+        searchCommands("commandListPython");
+    });
+
+    javaLink.addEventListener("click", () => {
+        searchCommands("commandListJava");
+    });
+
+    cplusplusLink.addEventListener("click", () => {
+        searchCommands("commandListCPlusPlus");
+    });
+</script>
+
+</body>
+</html>
